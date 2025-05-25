@@ -1,9 +1,7 @@
 # PCA-EXP-4-MATRIX-ADDITION-WITH-UNIFIED-MEMORY AY 23-24
-<h3>AIM:</h3>
-<h3>ENTER YOUR NAME:ALAN ZION H</h3>
-<h3>REGISTER NO:212223240004</h3>
-<h3>EX. NO:04</h3>
-<h3>DATE:22-04-2025</h3>
+<h3>ENTER YOUR NAME: ALAN ZION H</h3>
+<h3>ENTER YOUR REGISTER: 212223240004 NO</h3>
+<h3>EX. NO: 04</h3>
 <h1> <align=center> MATRIX ADDITION WITH UNIFIED MEMORY </h3>
   Refer to the program sumMatrixGPUManaged.cu. Would removing the memsets below affect performance? If you can, check performance with nvprof or nvvp.</h3>
 
@@ -43,7 +41,7 @@ Allocate Host Memory
 !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
 %load_ext nvcc4jupyter
 ```
-## WITH MEMSET:
+## with memset:
 ```
 %%cuda
 #include <stdio.h>
@@ -280,7 +278,7 @@ int main(int argc, char **argv)
 }
 ```
 
-## WITHOUT MEMSET:
+## without memset:
 ```
 %%cuda
 #include <stdio.h>
@@ -516,16 +514,13 @@ int main(int argc, char **argv)
     return (0);
 }
 ```
+
 ## OUTPUT:
+## with memset:
+![image](https://github.com/user-attachments/assets/b1fd6cfe-f968-4c07-ad40-270e0ea24113)
 
-## WITH MEMSET:
-![image (1)](https://github.com/user-attachments/assets/46fca2cf-3397-4c70-b5c8-959044f26254)
-
-
-## WITHOUT MEMSET:
-![image-1](https://github.com/user-attachments/assets/b0eb3ae8-c98a-4e49-b196-b2236eaaf425)
+## without memset:
+![image](https://github.com/user-attachments/assets/28919107-53f6-434e-a00d-b574074282d2)
 
 ## RESULT:
-
-Thus the program has been executed by using unified memory. It is observed that removing memset function has given less/more 0.000001 time.
-
+Thus the program has been executed by using unified memory. It is observed that removing memset function has given less/more_______________time.
